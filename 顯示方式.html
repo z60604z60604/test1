@@ -6,17 +6,28 @@
     <title>Document</title>
     <style>
         .all{
+            border:1px solid black;
+            width:100vw;
+            height:40vw;
             display: flex;
-           flex
-           
+            flex-flow: wrap row-reverse;
+            align-items: center;
+            justify-content:center    
         }
-        .a,.b,.c{
+        .c{
+            order:1
+        }
+        .e{
+            align-self:flex-end
+        }
+        .a,.b,.c,.e,.f,.g{
             display: inline; 
             /* visibility: hidden; */
             border: 1px solid black; 
             width: 200px; 
             height: 200px;    
-            font-size:48px    
+            font-size:48px;
+            
         }
         
     </style>
@@ -26,6 +37,9 @@
     <div class="a">1</div>
     <div class="b">2</div>
     <div class="c">3</div>
+    <div class="e">4</div>
+    <div class="f">5</div>
+    <div class="g">6</div>
 </div>
 </body>
 </html>
