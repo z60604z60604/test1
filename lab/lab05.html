@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(119, 114, 114);
+        }
+        caption{
+            font-size:48px;
+            color: rgb(208, 230, 16); text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+        }
+        table {
+            width:800px;
+            height:600px;
+            text-align: center;
+            border-style:groove;
+            border-width:thick;
+            border-color: rgb(206, 8, 18);
+            border-radius: 10px;
+            font-family:'Noto Serif TC', serif ;
+            
+        }
+        th{
+            color:purple;
+            background-color: rgb(241, 187, 241);
+        }
+        #break{
+            background-color: lightgreen;
+        }  
+        tr td:first-child{
+            background-color: lightgreen;
+        }
+        .break{
+            background-color: rgb(241, 239, 65)
+        }
+        tr:last-child td:nth-child(2){
+            background-color: rgb(158, 144, 238)
+        }
+        /* body{
+             background-image: url(../img/nlnlkid.jpg);
+             background-repeat:repeat-y;
+             background-position:75% 50%
+        } */
+        tr td:hover{
+            background-color: lightblue ;
+        }
+        tr:nth-child(5) td:nth-child(2){
+            font-size: 48px;
+            color: #5d0dc5; text-shadow: 3px 0px 7px rgba(81,67,21,0.8), -3px 0px 7px rgba(81,67,21,0.8), 0px 4px 7px rgba(81,67,21,0.8);
+
+        }
+        td{
+            background-color:lightcyan;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table border='1'>
+        <caption>課表</caption>
+        <tr>
+            <th></th>
+            <th>星期一</th>
+            <th>星期二</th>
+            <th>星期三</th>
+            <th>星期四</th>
+            <th>星期五</th>
+        </tr>
+        <tr>
+            <td >09:10</td>
+            <td>python基礎程式設計</td>
+            <td>web基礎程式設計</td>
+            <td>軟體工程專題</td>
+            <td>python基礎程式設計</td>
+            <td>web基礎程式設計</td>
+        </tr>
+        <tr>
+            <td>10:10</td>
+            <td>python基礎程式設計</td>
+            <td>web基礎程式設計</td>
+            <td>軟體工程專題</td>
+            <td>python基礎程式設計</td>
+            <td>web基礎程式設計</td>
+        </tr>
+        <tr>
+            <td>11:10</td>
+            <td>python基礎程式設計</td>
+            <td>web基礎程式設計</td>
+            <td>軟體工程專題</td>
+            <td>python基礎程式設計</td>
+            <td>web基礎程式設計</td>
+        </tr>
+        <tr id='break'>
+            <td>12:10</td> </td>
+            <td colspan="5" class='break'>午休</td>
+        </tr>
+        <tr>
+            <td>13:10</td>
+            <td>python基礎程式設計</td>
+            <td>web基礎程式設計</td>
+            <td>資訊概論</td>
+            <td>python基礎程式設計</td>
+            <td>web基礎程式設計</td>
+        </tr>
+        <tr>
+            <td>14:10</td>
+            <td>python基礎程式設計</td>
+            <td>web基礎程式設計</td>
+            <td>資訊概論</td>
+            <td>python基礎程式設計</td>
+            <td>web基礎程式設計</td>
+        </tr>
+        <tr>
+            <td >15:10</td>
+            <td>python基礎程式設計</td>
+            <td>web基礎程式設計</td>
+            <td>資訊概論</td>
+            <td>python基礎程式設計</td>
+            <td>web基礎程式設計</td>
+        </tr>
+        <tr>
+            <td>16:10</td>
+            <td colspan='5'></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
     <style>
         #anchor{
             background-color: darkslategray;
@@ -26,9 +27,32 @@
             min-height:1px ;
             min-width: 1px;
         }
-        ol li{
-            text-shadow: 1px 1px rgb(16, 47, 219);
+        table{
+            text-align: center;
+            vertical-align: bottom;
+            background-color: cornsilk;
+
         }
+        table,th,td{
+            border: 1px solid brown;
+        }
+        /* ol{
+            list-style-image:url(img/nlnloeo.jpg);
+        } */
+        ol li{
+            text-shadow: 1px 1px rgb(219, 131, 16);
+            font-family: 'Noto Serif TC', serif;
+            font-style: italic;
+            font-weight: bolder;
+            
+        }
+        tbody tr:first-child:hover{
+            background-color:rgb(211, 114, 114);
+        }
+        tr:hover{
+            background-color: lightgreen ;
+        }
+
     </style>
 </head>
 
@@ -40,7 +64,7 @@
 <div>
 <p title='打招呼'>你好啊</p> 
 <p>我是<span style='background:yellow;color:blue'>MK</span></p>
-<ol type='1'>
+<ol>
     <caption>綽號</caption>
     <li>MK</li>
     <li>屁眼俠</li>
@@ -49,8 +73,9 @@
 </ol> 
 </div>
 <div id='table'>
-<table border='1'>
-    <caption>開台時間</caption>
+<table >
+    <caption style="color: rgb(39, 39, 43);font-weight: bolder;font-size:16px
+    ;font-style: italic">開台時間</caption>
 <thead>
     <tr>
         <th>時間</th>
