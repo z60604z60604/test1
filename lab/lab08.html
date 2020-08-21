@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <style>
+        .box {
+            width: 100vw;
+            height: 50vw;
+        }
+
+        body {
+            background-color: rgb(83, 77, 77);
+        }
+
+        .h1 {
+            font-size: 36px;
+            color: rgb(208, 230, 16);
+            text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+        }
+
+        .clas {
+            width: 600px;
+            height: 400px;
+            text-align: center;
+            border-style: groove;
+            border-width: thick;
+            border-color: rgb(206, 8, 18);
+            border-radius: 10px;
+            font-family: 'Noto Serif TC', serif;
+
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            color: rgb(208, 230, 16);
+            text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
+        }
+
+        .score tr:first-child {
+            background-color: lightblue;
+            color: black;
+        }
+
+        .score tr:nth-child(2) {
+            background-color: white;
+            color: black;
+        }
+
+        th {
+            color: purple;
+            background-color: rgb(241, 187, 241);
+        }
+
+        #break {
+            background-color: lightgreen;
+        }
+
+        .clas tr td:first-child {
+            background-color: lightgreen;
+        }
+
+        .break {
+            background-color: rgb(241, 239, 65)
+        }
+
+        .clas tr:last-child td:nth-child(2) {
+            background-color: rgb(158, 144, 238)
+        }
+
+        .clas tr td:hover {
+            background-color: lightblue;
+        }
+
+        .clas tr:nth-child(5) td:nth-child(2) {
+            font-size: 48px;
+            color: #5d0dc5;
+            text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8), -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
+
+        }
+
+        .clas td {
+            background-color: lightcyan;
+        }
+
+        .name {
+            width: 10;
+            background-color: white;
+            color: black;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="h1"> <span  style="font-size:36px;color:rgb(161, 238, 18)" >
+        <i class="fas fa-edit fa-spin"></i>
+    </span>選課系統</h1>
+    <div class='container'>
+        <div class="row">
+            <div calss='col-sm-5'>
+                <table class='clas' border='1'>
+                    <p class="h1"> <span  style="font-size:36px;color:rgb(161, 238, 18)">
+                        <i class="fas fa-border-all"></i>
+                    </span>課表</p>
+
+                    <tr>
+                        <th></th>
+                        <th>星期一</th>
+                        <th>星期二</th>
+                        <th>星期三</th>
+                        <th>星期四</th>
+                        <th>星期五</th>
+                    </tr>
+                    <tr>
+                        <td>09:10</td>
+                        <td>python基礎程式設計</td>
+                        <td>web基礎程式設計</td>
+                        <td>軟體工程專題</td>
+                        <td>python基礎程式設計</td>
+                        <td>web基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <td>10:10</td>
+                        <td>python基礎程式設計</td>
+                        <td>web基礎程式設計</td>
+                        <td>軟體工程專題</td>
+                        <td>python基礎程式設計</td>
+                        <td>web基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <td>11:10</td>
+                        <td>python基礎程式設計</td>
+                        <td>web基礎程式設計</td>
+                        <td>軟體工程專題</td>
+                        <td>python基礎程式設計</td>
+                        <td>web基礎程式設計</td>
+                    </tr>
+                    <tr id='break'>
+                        <td>12:10</td>
+                        </td>
+                        <td colspan="5" class='break'>午休</td>
+                    </tr>
+                    <tr>
+                        <td>13:10</td>
+                        <td>python基礎程式設計</td>
+                        <td>web基礎程式設計</td>
+                        <td>資訊概論</td>
+                        <td>python基礎程式設計</td>
+                        <td>web基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <td>14:10</td>
+                        <td>python基礎程式設計</td>
+                        <td>web基礎程式設計</td>
+                        <td>資訊概論</td>
+                        <td>python基礎程式設計</td>
+                        <td>web基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <td>15:10</td>
+                        <td>python基礎程式設計</td>
+                        <td>web基礎程式設計</td>
+                        <td>資訊概論</td>
+                        <td>python基礎程式設計</td>
+                        <td>web基礎程式設計</td>
+                    </tr>
+                    <tr>
+                        <td>16:10</td>
+                        <td colspan='5'></td>
+                </table>
+            </div>
+
+
+            <div class='col-sm-4 '>
+                <div class="p-2 bd-highlight">
+                    
+                    <table class='score'>
+                        <p class="h1"> <span  style="font-size:36px;color:rgb(161, 238, 18)">
+                            <i class="fas fa-calculator fa-fw"></i>
+                        </span>學分計算</p>
+                        <tr>
+                            <td>已選學分</td>
+                            <td>系上必修</td>
+                            <td>系上選修</td>
+                            <td>系外選修</td>
+                            <td>通識</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>15</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>3</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <p class="h1"><span  style="font-size:36px;color:rgb(161, 238, 18)">
+                    <i class="fas fa-address-card fa-fw"></i>
+                    </span>個人資料</p>
+                    <table class='name' border='1'>
+                        <tr>
+                            <td>姓名</td>
+                            <td>班級</td>
+                        </tr>
+                        <tr>
+                            <td>陳鴻祥</td>
+                            <td>行銷四乙</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+
+            <!-- <img src="../img/nlnlkid.jpg" width='100px' height='100px' alt='熊班長'> -->
+
+        </div>
+        <div>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+                integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
